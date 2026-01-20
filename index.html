@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Atharv Namdev — V4 Premium</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- GSAP for premium motion -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="theme-dark">
+    <header class="nav">
+      <div class="brand">Atharv<span class="dot">.</span></div>
+      <nav class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="controls">
+        <button id="themeToggle" class="icon" aria-label="Toggle theme">☀️</button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="kicker">Elevated Product Design • Front‑End</div>
+          <h1 class="hero-title">I'm <span class="accent">Atharv</span> — Crafting high‑grade digital experiences</h1>
+          <p class="hero-sub">A premium, 3D parallax portfolio built for modern products. Interactions, micro‑animations and polished details included.</p>
+          <div class="hero-cta">
+            <button class="btn primary magnetic" data-action="see-projects">See Projects</button>
+            <button class="btn ghost magnetic" data-action="contact">Contact</button>
+          </div>
+        </div>
+
+        <!-- 3D Card -->
+        <div class="hero-visual">
+          <div class="parallax-scene" id="scene">
+            <div class="layer layer-back"></div>
+            <div class="layer layer-card" id="card">
+              <div class="card-inner">
+                <img src="atharv.jpg" alt="Atharv" class="profile">
+                <div class="card-body">
+                  <h3>Atharv Namdev</h3>
+                  <div class="role">Product & Front‑End Developer</div>
+                  <div class="links-row">
+                    <a class="link" href="projects.html">Projects</a>
+                    <a class="link" href="contact.html">Contact</a>
+                  </div>
+                </div>
+              </div>
+              <div class="edge-glow"></div>
+            </div>
+            <div class="layer layer-front"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div class="scroll-hint">Scroll to explore ↓</div>
+      </div>
+    </main>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-card card-glass">
+            <h2>About Me</h2>
+            <p>I build premium front-end experiences focused on performance, polish and design systems. I love creating intuitive interfaces and delightful interactions.</p>
+            <ul class="stats">
+              <li><strong>HTML/CSS</strong><span>Expert</span></li>
+              <li><strong>JavaScript</strong><span>Intermediate → Adv</span></li>
+              <li><strong>Design</strong><span>UI & Prototyping</span></li>
+            </ul>
+          </div>
+          <div class="about-timeline card-soft">
+            <h3>Experience & Learning</h3>
+            <div class="timeline">
+              <div class="t-item"><div class="t-year">2024</div><div class="t-body"><strong>College projects</strong><div class="t-desc">Frontend prototypes and UI experiments.</div></div></div>
+              <div class="t-item"><div class="t-year">2025</div><div class="t-body"><strong>Personal portfolio</strong><div class="t-desc">This premium portfolio (V4) — advanced animations.</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Selected Projects</h2>
+          <p>3D tiles, tilt hover and detail popups for each project.</p>
+        </div>
+
+        <div class="project-grid">
+          <div class="project-tile" data-title="Portfolio Website" data-desc="This very site — high polish, parallax and interactions." data-tech="HTML • CSS • JS">
+            <div class="tile-inner">
+              <div class="tile-media"></div>
+              <div class="tile-body">
+                <h4>Portfolio Website</h4>
+                <p>Animated, responsive, production focused.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-tile" data-title="Mini App UI" data-desc="Productive UI prototypes with accessible patterns." data-tech="Figma • HTML">
+            <div class="tile-inner">
+              <div class="tile-media"></div>
+              <div class="tile-body">
+                <h4>Mini App UI</h4>
+                <p>Component driven UI and clean layouts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-tile" data-title="Dashboard Concept" data-desc="Analytics focused dashboard with clarity and hierarchy." data-tech="HTML • CSS">
+            <div class="tile-inner">
+              <div class="tile-media"></div>
+              <div class="tile-body">
+                <h4>Dashboard Concept</h4>
+                <p>Data-first design and visual systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="contact-card card-glass">
+          <h2>Get in touch</h2>
+          <p>If you'd like to collaborate, send an email and I'll respond quickly.</p>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:your.email@example.com?subject=Hello%20Atharv">Email me</a>
+            <a class="btn ghost" href="mailto:your.email@example.com?subject=Inquiry">Quick message</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">© <strong>Atharv Namdev</strong> — Built with premium motion and design.</div>
+    </footer>
+
+    <!-- Project modal -->
+    <div id="modal" class="modal">
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose">✕</button>
+        <h3 id="mTitle">Title</h3>
+        <p id="mDesc">Description</p>
+        <div id="mTech" class="meta"></div>
+        <div style="margin-top:14px"><a id="mDemo" class="btn primary" href="#">View Demo</a></div>
+      </div>
+    </div>
+
+    <!-- custom cursor -->
+    <div id="cursor" class="cursor"></div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
